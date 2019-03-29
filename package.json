@@ -1,0 +1,21 @@
+{
+  "name": "imlazy",
+  "version": "1.0.0",
+  "description": "A lazy loading module that uses Intersection Observer to load your media elements",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "intersection observer",
+    "lazy loading",
+    "i am a lazy element"
+  ],
+  "author": "momkai.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Momkai/imlazy/issues"
+  },
+  "homepage": "https://github.com/Momkai/imlazy#readme"
+}
