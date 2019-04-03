@@ -1,10 +1,20 @@
+const selector = `[data-imlazy]`
+const properties = { root: null, rootMargin: `0px 0px`, threshold: 0 }
+const domElement = document
+
 export default class ImLazy {
-  constructor (selector = '[data-imlazy]', properties = { root: null, rootMargin: '10px 0px 0px 0px' }, domElement = document) {
-    // Passed Intersection Observer options
-    this.properties = properties
+  constructor (options = { selector, properties, domElement }) {
+    // Check selector for media items
+    this.selector = Object.assign(selector, options.selector)
+
+    // Passed Intersection Observer properties
+    this.properties = Object.assign(properties, options.properties)
+
+    // Dom  element passed on options
+    this.domElement = Object.assign(domElement, options.domElement)
 
     // Get a DOM element to observe media elements
-    this.elements = domElement.querySelectorAll(selector)
+    this.elements = this.domElement.querySelectorAll(this.selector)
   }
 
   init () {

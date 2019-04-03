@@ -53,7 +53,11 @@ Your html should then contain:
 ## Available options
 
 ```js
-const ImLazy = new ImLazy(selector = '[data-imlazy]', properties = { root: null, rootMargin: '10px 0px 0px 0px' }, domElement = document)
+const ImLazy = new ImLazy(options = {
+    selector: `[data-imlazy]`,
+    properties: { root: null, rootMargin: `0px 0px`, threshold: 0 },
+    domElement: document
+})
 ```
 
 - `selector`
