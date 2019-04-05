@@ -1,3 +1,6 @@
+![GitHub](https://img.shields.io/github/license/Momkai/imlazy.svg?style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Momkai/imlazy.svg?style=flat-square)
+
 <img src="https://cloud.githubusercontent.com/assets/382735/8745724/e4b7dbf6-2c82-11e5-90da-0fe62d912bb2.png" alt="Momkai" width="50"/> Momkai.com
 =======
 
