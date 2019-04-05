@@ -1,3 +1,3 @@
-import ImLazy from 'imlazy'
+import ImLazy from './imlazy'
 
 export default ImLazy
