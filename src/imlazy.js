@@ -35,6 +35,10 @@ export default class ImLazy {
   onIntersection(entries) {
     entries.forEach(entry => {
       const element = entry.target
+
+      console.log(element)
+      console.log(entry)
+      console.log('--')
       
       if (entry.isIntersecting && !element.hasAttribute('data-imlazy-loaded')) {
         this.preload(element)
