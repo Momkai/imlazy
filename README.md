@@ -1,10 +1,11 @@
 <img src="https://cloud.githubusercontent.com/assets/382735/8745724/e4b7dbf6-2c82-11e5-90da-0fe62d912bb2.png" alt="Momkai" width="50"/> Momkai.com
 =======
 
+# I'm Lazy
+
 > A lazy loading module that uses Intersection Observer to load your media elements
 
-Small utilitary script to lazy load your media elements using [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver).
-
+Small utilitarian script to lazy load your media elements using [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver).
 
 ## Instructions
 
@@ -68,10 +69,8 @@ You can set overwrite the properties of [Intersection Observer](https://develope
 By default you can observe element in the `document` but you can restrict this to a different element you would like to use the lazy loading.
 
 
-## To do
-- [ ] debug content reflow as images load
-- [ ] add pollyfill dependency
-- [ ] add webpack dist builder for more support
-- [ ] add opacity animation for image assets ?
+#### Notes
 
+- Be aware that using this script in production and depending on your support requirements you might need to have Intersection Observer [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill) from W3C.
+- This script assumes that you deal with transpiling javascript yourself using your preference tool
 

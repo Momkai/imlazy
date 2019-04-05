@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A lazy loading module that uses Intersection Observer to load your media elements",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "javascript",
     "intersection observer",
@@ -17,5 +14,6 @@
   "bugs": {
     "url": "https://github.com/Momkai/imlazy/issues"
   },
-  "homepage": "https://github.com/Momkai/imlazy#readme"
+  "homepage": "https://github.com/Momkai/imlazy#readme",
+  "repository": "git@github.com:Momkai/imlazy.git"
 }
