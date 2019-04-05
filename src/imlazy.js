@@ -38,7 +38,7 @@ export default class ImLazy {
       
       if (entry.isIntersecting && !element.hasAttribute('data-imlazy-loaded')) {
         this.preload(element)
-        this.io.unobserve(element)
+        // this.io.unobserve(element)
       }
     })
   }
