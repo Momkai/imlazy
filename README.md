@@ -76,4 +76,5 @@ By default you can observe element in the `document` but you can restrict this t
 
 - Be aware that using this script in production and depending on your support requirements you might need to have Intersection Observer [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill) from W3C.
 - This script assumes that you deal with transpiling javascript yourself using your preference tool
+- You should also be able to use this script using [Pika CDN](https://www.pika.dev/cdn/) as a esm. See example [here](https://github.com/Momkai/imlazy/blob/master/example/index.html) 
 
