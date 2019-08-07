@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "A lazy loading module that uses Intersection Observer to load your media elements",
   "main": "src/index.js",
+  "module": "src/index.js",
   "keywords": [
     "javascript",
     "intersection observer",
