@@ -1,6 +1,6 @@
 {
   "name": "imlazy-io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lazy loading module that uses Intersection Observer to load your media elements",
   "main": "src/index.js",
   "module": "src/index.js",
