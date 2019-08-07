@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>I'm Lazy - A lazy loading module that uses Intersection Observer to load your media elements</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        .imlazy-page {
+            margin: 50px auto;
+            max-width: 960px;
+            text-align: center;
+        }
+        .imlazy-section {
+            position: relative;
+            z-index: 1;
+        }
+        .imlazy-section:first-child {
+            margin-top: 0;
+            height: 100vh;
+        }
+        .imlazy-section h2 {
+            margin: 100px;
+            padding: 10px 15px;
+            background-color: #ffffff;
+        }
+
+        .imlazy-section::after {
+            content: ' ';
+            width: 1px;
+            position: absolute;
+            height: 100%;
+            left: calc(50% - 1px);
+            z-index: 0;
+            background-color: #999999;
+        }
+    </style>
+    <script type="module">
+        import ImLazy from 'https://github.pika.dev/momkai/imlazy/pr/8';
+
+        const options = {
+            selector: `[data-imlazy]`,
+            properties: { root: null, rootMargin: `0px 0px`, threshold: 0 },
+            domElement: document
+        };
+
+        const pkg = new ImLazy({options});
+
+        document.addEventListener('DOMContentLoaded', () => {
+            pkg.init()
+        })
+    </script>
+</head>
+<body>
+
+<div class="imlazy-page">
+
+    <div class="imlazy-section">
+        <h1>I'm Lazy</h1>
+    </div>
+
+    <div class="imlazy-section">
+        <h2>Somewhere on the next lines lines you will see cats</h2>
+
+        <img data-imlazy data-src="https://placekitten.com/640/500" alt="" />
+
+        <hr />
+
+        <!-- picture -->
+        <picture data-imlazy>
+            <source media="(max-width: 640px)" data-srcset="https://placekitten.com/640/500">
+            <source media="(min-width: 640px)" data-srcset="https://placekitten.com/1280/1000">
+
+            <img data-src="https://placekitten.com/1280/1000" alt="">
+        </picture>
+
+    </div>
+
+    <div class="imlazy-section">
+        <h2>Somewhere on the next lines lines you will see bears</h2>
+
+        <img data-imlazy data-src="https://placebear.com/640/500" alt="" />
+
+        <hr />
+
+        <!-- picture -->
+        <picture data-imlazy>
+            <source media="(max-width: 640px)" data-srcset="https://placebear.com/640/500">
+            <source media="(min-width: 640px)" data-srcset="https://placebear.com/1280/1000">
+
+            <img data-src="https://placebear.com/1280/1000" alt="">
+        </picture>
+
+    </div>
+</div>
+
+</body>
+</html>
